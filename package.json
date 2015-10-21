@@ -1,0 +1,15 @@
+{
+	"name"    : "x-server-monitor",
+	"version" : "0.0.0",
+	"dependencies" : {
+		"x-log"   : "latest",
+		"express" : "latest"
+	},
+	"devDependencies":{
+		"markdox" : "latest"
+	},
+	"main" : "monitor.js",
+	"scripts": {
+		"prepublish" : "markdox -o ./README.md ./monitor.js"
+	}
+}
