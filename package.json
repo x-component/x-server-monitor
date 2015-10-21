@@ -11,5 +11,11 @@
 	"main" : "monitor.js",
 	"scripts": {
 		"prepublish" : "markdox -o ./README.md ./monitor.js"
-	}
+	},
+    "keywords": [
+      "x-x",
+      "x-component",
+      "x-server",
+      "monitor"
+    ]
 }
