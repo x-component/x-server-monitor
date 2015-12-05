@@ -1,16 +1,16 @@
 {
   "name": "x-server-monitor",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "dependencies": {
-    "x-log": "latest",
+    "x-log": "1.x.x",
     "express": "latest"
   },
   "devDependencies": {
-    "markdox": "latest"
+    "x-publish": "1.x.x"
   },
   "main": "monitor.js",
   "scripts": {
-    "prepublish": "markdox -o ./README.md ./monitor.js"
+    "prepublish": "./node_modules/x-publish/scripts/prepublish.sh"
   },
   "keywords": [
     "x-x",
