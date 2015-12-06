@@ -1,10 +1,10 @@
 {
   "name": "x-server-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "x-log": "1.x.x",
     "express": "latest",
-    "errorhandler" : "latest"
+    "errorhandler": "latest"
   },
   "devDependencies": {
     "x-publish": "1.x.x"
