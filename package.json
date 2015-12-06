@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "x-log": "1.x.x",
-    "express": "latest"
+    "express": "latest",
+    "errorhandler" : "latest"
   },
   "devDependencies": {
     "x-publish": "1.x.x"
