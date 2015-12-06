@@ -1,6 +1,6 @@
 # x-server-monitor
 
-[Build Status](https://travis-ci.org/x-component/x-server-monitor.png?v1.0.0)](https://travis-ci.org/x-component/x-server-monitor)
+[Build Status](https://travis-ci.org/x-component/x-server-monitor.png?v1.0.1)](https://travis-ci.org/x-component/x-server-monitor)
 
 - [./monitor.js](#monitorjs) 
 

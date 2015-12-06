@@ -3,23 +3,21 @@
  * Defines and starts the HTTP server for the server monitoring. Extracts process information from the node.js runtime
  * and sends it as HTTP response.
  */
-var express = require('express'),
-	log     = require('x-log'),
-	x       = require('x-common').extend,
-	os      = require('os');
+var
+	express       = require('express'),
+	log           = require('x-log'),
+	x             = require('x-common').extend,
+	os            = require('os'),
+	error_handler = require('errorhandler');
 
 module.exports = function (processes) {
 	
 	var monitor = express();
 	
-	monitor.configure(function () { // Configuration
-		monitor.use(monitor.router);
-		monitor.use(/production/.test(process.env.NODE_ENV) ?
-			express.errorHandler() :
-			express.errorHandler(
-				{dumpExceptions:true, showStack:true}
-			));
-	});
+	monitor.use(/production/.test(process.env.NODE_ENV) ?
+		error_handler() :
+		error_handler( {dumpExceptions:true, showStack:true})
+	);
 	
 	x(monitor, {
 		processes:processes || [process],
@@ -107,3 +105,4 @@ module.exports = function (processes) {
 	});
 	return monitor;
 };
+
